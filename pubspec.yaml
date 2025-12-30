@@ -39,6 +39,8 @@ dependencies:
   webview_flutter:
   flutter_launcher_icons: ^0.14.4
   change_app_package_name:
+  just_audio: ^0.9.38
+  audio_service: ^0.18.13
 
 dev_dependencies:
   flutter_test:

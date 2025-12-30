@@ -4,6 +4,9 @@ import 'package:holy_cross/screen/radio_screeen.dart';
 import 'package:holy_cross/utils/app_assets.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'media_player_screen.dart';
+import 'new_audio_player.dart';
+
 class HolyCrossScreen extends StatefulWidget {
   const HolyCrossScreen({super.key});
 
@@ -211,7 +214,8 @@ class _HolyCrossScreenState extends State<HolyCrossScreen> {
                              image: AppAssets.radio,
                              icon: Icons.radio,
                              onTap: () {
-                               Navigator.push(context,MaterialPageRoute(builder: (_)=>RadioWebView()));
+                               Navigator.push(context, MaterialPageRoute(builder: (_)=>AudioPlayerUI()));
+                            //   Navigator.push(context,MaterialPageRoute(builder: (_)=>RadioWebView()));
                              }
                            //_launchURL(holyCrossRadio),
                          ),

@@ -19,7 +19,7 @@ class _HolyCrossScreenState extends State<HolyCrossScreen> {
   final Uri holyCrossRadio = Uri.parse("https://holycrossradio.com/");
   final Uri youtubeURL = Uri.parse("https://youtube.com/@holycrosstv");
   final Uri facebookURL =Uri.parse("https://www.facebook.com/share/1ZSe2YJwtN/?mibextid=wwXIfr");
-
+  final Uri audioURL =Uri.parse("http:/holycrossradio.com");
   final Uri shortsURL =Uri.parse("https://www.youtube.com/@holycrosstv/shorts");
   final Uri instaURL =Uri.parse("https://www.instagram.com/holycrosstv/?igsh=emhhZ2QyOGk5cXVn#");
 
@@ -213,10 +213,11 @@ class _HolyCrossScreenState extends State<HolyCrossScreen> {
                              title: "Live Radio",
                              image: AppAssets.radio,
                              icon: Icons.radio,
-                             onTap: () {
-                               Navigator.push(context, MaterialPageRoute(builder: (_)=>AudioPlayerUI()));
-                            //   Navigator.push(context,MaterialPageRoute(builder: (_)=>RadioWebView()));
-                             }
+                           onTap: () => _launchURL(audioURL),
+                             // onTap: () {
+                             // //  Navigator.push(context, MaterialPageRoute(builder: (_)=>AudioPlayerUI()));
+                             //  Navigator.push(context,MaterialPageRoute(builder: (_)=>RadioWebView()));
+                             // }
                            //_launchURL(holyCrossRadio),
                          ),
                        ),
